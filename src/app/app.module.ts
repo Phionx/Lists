@@ -7,6 +7,13 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AddPage } from '../pages/add/add';
+import { ListPage } from '../pages/list/list';
+import { ItemsPage } from '../pages/items/items';
+import { UpdatePage } from '../pages/update/update';
+import { ManagePage } from '../pages/manage/manage';
+
+import { IonicStorageModule } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,11 +24,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddPage,
+    ListPage,
+    ItemsPage,
+    UpdatePage,
+    ManagePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,7 +43,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddPage,
+    ListPage,
+    ItemsPage,
+    UpdatePage,
+    ManagePage
   ],
   providers: [
     StatusBar,
