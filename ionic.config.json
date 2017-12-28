@@ -1,8 +1,0 @@
-{
-  "name": "lists",
-  "app_id": "4b199f00",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
